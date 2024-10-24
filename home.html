@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="icon" type="image/x-icon" href="images/logo jj.png">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo"><img src="images/logo jj.png" height="80px" width="80px"><b>Future focus</b></a>
+  
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name"> Mr RAJKUMAR POONIA</h3>
+         
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Mr RAJKUMAR POONIA </h3>
+     
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>About</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Course</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Tutors</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contact Us</span></a>
+   </nav>
+
+</div>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="images/the-role-of-future-education.jpg" height="600px" width="100%">
+ 
+</div>
+
+<div class="mySlides fade">
+
+  <img src="images/illustration-of-software-development-in-the-cloud.webp" height="600px" width="100%">
+ 
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="images/Diploma-in-IT.jpg" height="600px" width="100%">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<section class="home-grid">
+
+   <h1 class="heading">quick options</h1>
+
+   <div class="box-container">
+
+     
+
+      <div class="box">
+         <h3 class="title"> class 11th and 12th</h3>
+         <div class="flex">
+            <a href="arts.html"><i class="fas fa-book"></i><span>Arts</span></a>
+            <a href="#"><i class="fas fa-chart-simple"></i><span>Commerce</span></a>
+            <a href="#"><i class="fas fa-vial"></i><span>Science(PCM)</span></a>
+            <a href="#"><i class="fas fa-pen"></i><span>Science(PCB)</span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">Bachleor's </h3>
+         <div class="flex">
+            <a href="ba.html"><i class="fas fa-book"></i><span>BA</span></a>
+            <a href="#"><i class="fas fa-chart-simple"></i><span>BBA</span></a>
+            <a href="#"><i class="fas fa-code"></i><span>BCA</span></a>
+            <a href="#"><i class="fas fa-chart-line"></i><span>B.com</span></a>
+            <a href="#"><i class="fas fa-vial"></i><span>B.SC</span></a>
+            <a href="#"><i class="fas fa-chart-line"></i><span>B.tech</span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">Master's </h3>
+         <div class="flex">
+            <a href="ma.html"><i class="fas fa-book"></i><span>MA</span></a>
+            <a href="#"><i class="fas fa-chart-simple"></i><span>MBA</span></a>
+            <a href="#"><i class="fas fa-code"></i><span>MCA</span></a>
+            <a href="#"><i class="fas fa-chart-simple"></i><span>M.com</span></a>
+            <a href="#"><i class="fas fa-vial"></i><span>M.SC</span></a>
+            <a href="#"><i class="fas fa-chart-line"></i><span>M.tech</span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">popular topics</h3>
+         <div class="flex">
+            <a href="courses.html"><i class="fab fa-html5"></i><span>HTML</span></a>
+            <a href="courses.html"><i class="fab fa-css3"></i><span>CSS</span></a>
+            <a href="courses.html"><i class="fab fa-js"></i><span>javascript</span></a>
+            <a href="courses.html"><i class="fab fa-react"></i><span>react</span></a>
+            <a href="courses.html"><i class="fab fa-php"></i><span>PHP</span></a>
+            <a href="courses.html"><i class="fab fa-bootstrap"></i><span>bootstrap</span></a>
+            <a href="courses.html"><i class="fab fa-python"></i><span>Python</span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">top categories</h3>
+         <div class="flex">
+            <a href="#"><i class="fas fa-code"></i><span>development</span></a>
+            <a href="#"><i class="fas fa-chart-simple"></i><span>business</span></a>
+            <a href="#"><i class="fas fa-pen"></i><span>design</span></a>
+            <a href="#"><i class="fas fa-chart-line"></i><span>marketing</span></a>
+            <a href="#"><i class="fas fa-music"></i><span>music</span></a>
+            <a href="#"><i class="fas fa-camera"></i><span>photography</span></a>
+            <a href="#"><i class="fas fa-cog"></i><span>software</span></a>
+            <a href="#"><i class="fas fa-vial"></i><span>science</span></a>
+         </div>
+      </div>
+
+     
+</section>
+
+
+
+<p class="majorlanguages"><u>Languages mostly use in <span style="color: #fff;"> web development</span></p></u>
+
+
+
+
+<style>
+
+
+.majorlanguages{
+
+
+font-family:Arial, Helvetica, sans-serif;
+color: #06c1f5;
+font-size: 40px;
+margin-left: 15%;
+margin-top: 3%;
+margin-right: 30%;
+width: 100%;
+
+}
+
+</style>
+
+
+<div class="xvSs3">
+        
+   <div class="aSdp1" style="--clr:#009688;">
+    
+      <div class="Sjsd4">
+         <img src="images/1_0prD6XVCG837ThX_xuYDZw.jpg">
+      </div>
+      <div class="u7e5Y">
+         <h2 style="display: ;" >HTML</h2>
+         <p>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page</p>
+      </div>
+   </div>
+   <div class="aSdp1" style="--clr:#b6336c;">
+      <div class="Sjsd4">
+         <img src="images/Vp9WvV7YKdH4k8sKRePcE8.jpg">
+      </div>
+      <div class="u7e5Y">
+         <b><h style="font-size: 18px;">CSS</h2></h></b>
+         <p>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</p>
+      </div>
+   </div>
+   <div class="aSdp1" style="--clr:#005c96;">
+      <div class="Sjsd4">
+         <img src="images/images.jpeg">
+      </div>
+      <div class="u7e5Y">
+         <h2>JS</h2>
+         <p>A scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else</p>
+      </div>
+   </div>
+</div>
+</div>
+
+<style>
+
+.xvSs3
+ {
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 70px 300px;
+ padding: 70px 30px;
+ }
+   
+
+ .aSdp1
+ {
+ position:relative;
+ display:flex;
+ justify-content: center;
+ align-items: flex-start;
+ width:350px ;
+ height: 264px;
+ background: #fff;
+ border-radius: 20px;
+ box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+ transition: 0.5;
+ }
+ .aSdp1:hover
+ {
+ height:400px;
+ }
+ .Sjsd4
+ {
+ position: absolute;
+ top: 20px;
+ width: 300px;
+ height: 220px;
+ background: #333;
+ border-radius: 12px;
+ overflow: hidden;
+ transition: 0.5s;
+ z-index: 1; /* Increased z-index to keep it behind */
+ }
+ .aSdp1:hover .Sjsd4
+ {
+ top: -100px;
+ scale: 0.75;
+ box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+ }
+
+
+ .Sjsd4
+ {
+ position: absolute;
+ top: 20px;
+ width: 300px;
+ height: 220px;
+ background: #333;
+ border-radius: 12px;
+ overflow: hidden;
+ transition: 0.5s;
+ z-index: 1; /* Increased z-index to keep it behind */
+ }
+ .aSdp1:hover .Sjsd4
+ {
+ top: -100px;
+ scale: 0.75;
+ box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+ }
+ .Sjsd4 img
+ {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+
+
+ .u7e5Y
+ {
+ position:absolute;
+ top: 240px; /* Adjusted top position to give space for h2 */
+ width:100%;
+ padding: 0 40px;
+ height: 65px;
+ overflow: hidden;
+ text-align: center;
+ transition: 0.5s;
+ z-index: 2; /* Higher z-index to keep it on top */
+ }
+ .aSdp1:hover .u7e5Y
+ {
+ top:150px; /* Adjusted top position on hover */
+ height: 250px;
+ }
+ .aSdp1:hover .u7e5Y h2
+ {
+ font-size: 1.5em;
+ 
+ font-weight: 700;
+ color: var(--clr)
+ }
+ .u7e5Y p
+ {
+ color:#333;
+ font-size: 1.05em;
+ }
+ .er h1{
+   margin-left: 35%;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+<style>
+   body {
+       margin: 0;
+       overflow-x: hidden;
+   }
+
+   .footer {
+       background: #000;
+       padding: 30px 0;
+       font-family: 'Play', sans-serif;
+       text-align: center;
+       margin-right: -1%;
+   }
+
+   .footer .row {
+       width: 100%;
+       margin: 2% 0;
+       padding: 0.6% 0;
+       color: gray;
+       font-size: 0.8em;
+       margin-left: -1%;
+   }
+
+   .footer .row a {
+       text-decoration: none;
+       color: gray;
+       transition: 0.5s;
+   }
+
+   .footer .row a:hover {
+       color: rgb(14, 204, 214);
+   }
+
+   .footer .row ul {
+       width: 100%;
+   }
+
+   .footer .row ul li {
+       display: inline-block;
+       margin: 0 30px;
+   }
+
+   .footer .row a i {
+       font-size: 2em;
+       margin: 0 1%;
+   }
+
+   @media (max-width: 720px) {
+       .footer {
+           text-align: left;
+           padding: 5%;
+       }
+
+       .footer .row ul li {
+           display: block;
+           margin: 10px 0;
+           text-align: left;
+       }
+
+       .footer .row a i {
+           margin: 0 3%;
+           
+       }
+   }
+
+   .linkedin,
+   .instagram,
+   .twitter,
+   .whatsapp {
+       margin-right: 40%;
+       margin-bottom: -10%;
+   }
+
+   .instagram {
+       margin-right: 30%;
+       margin-bottom: -20%;
+   }
+
+   
+   .instagram:hover{
+
+      box-shadow: #f5f5f5 50px;
+
+   }
+
+   .linkedin:hover{
+
+      transform: scale(1.1);
+   }
+
+   .whatsapp:hover{
+
+transform: scale(1.1);
+}
+
+.twitter:hover{
+
+transform: scale(1.1);
+}
+
+.instagram:hover{
+
+transform: scale(1.1);
+
+}
+
+
+   .owner {
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       text-align: right;
+       margin-right: 2%;
+       margin-top: -13%;
+       font-size: small;
+       padding-bottom: 2%;
+   }
+
+   .copyright {
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-size: small;
+       margin-top: 3%;
+       text-align: center;
+       padding-bottom: -5%;
+       margin-bottom: -2%;
+   }
+</style>
+</head>
+
+<!-- Footer Section -->
+<footer>
+
+
+   
+<div class="footer">
+
+         
+
+         
+
+   <div class="row">
+       <ul>
+           <li class="linkedin"><a href="#"><img src="images/icons8-linkedin-48.png" alt=""></a></li>
+           <li class="instagram"><a href="#"><img src="images/instagramicon-png.png" style="height: 40px; width: 40px;"></a></li>
+           <li class="twitter"><a href="#"><img src="images/icons8-twitter-48.png" alt=""></a></li>
+           <li class="whatsapp"><a href="#"><img src="images/icons8-whatsapp-48.png" alt=""></a></li>
+       </ul>
+   </div>
+
+   <div class="row">
+       <ul>
+           <li><a href="#">FaQ</a></li><!-- iske andhr atleast 3-4 tab -->
+           <li><a href="#">Contact us</a></li>
+           <li><a href="#">Our Services</a></li>
+           <li><a href="#">Privacy Policy</a></li>
+           <li><a href="#">Terms & Conditions</a></li>
+       </ul>
+   </div>
+
+   <div class="row">
+       <div class="owner">
+           <br><br><span style="color:rgb(255, 208, 0)"> Designed </span> <span style="color: aqua;"> by: </span><br><br>
+         
+   RAJAKUMAR POONIA<br><br><br><br><br><br><div class="copyright"> Copyright © 2024 Inferno - All rights reserved ||</div>
+       </div>
+   </div>
+</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+
+
+
+
+

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo"><img src="images/logo jj.png" height="80px" width="80px"><b>Future focus</b></a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">shaikh anas</h3>
+         <p class="role">studen</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">shaikh anas</h3>
+      <p class="role">studen</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Tutors</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+   </nav>
+
+</div>
+
+<section class="form-container">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>register now</h3>
+      <p>your name <span>*</span></p>
+      <input type="text" name="name" placeholder="enter your name" required maxlength="50" class="box">
+      <p>your email <span>*</span></p>
+      <input type="email" name="email" placeholder="enter your email" required maxlength="50" class="box">
+      <p>your password <span>*</span></p>
+      <input type="password" name="pass" placeholder="enter your password" required maxlength="20" class="box">
+      <p>confirm password <span>*</span></p>
+      <input type="password" name="c_pass" placeholder="confirm your password" required maxlength="20" class="box">
+      <p>select profile <span>*</span></p>
+      <input type="file" accept="image/*" required class="box">
+      <input type="submit" value="register new" name="submit" class="btn">
+   </form>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+   body {
+       margin: 0;
+       overflow-x: hidden;
+   }
+
+   .footer {
+       background: #000;
+       padding: 30px 0;
+       font-family: 'Play', sans-serif;
+       text-align: center;
+       margin-right: -1%;
+   }
+
+   .footer .row {
+       width: 100%;
+       margin: 2% 0;
+       padding: 0.6% 0;
+       color: gray;
+       font-size: 0.8em;
+       margin-left: -1%;
+   }
+
+   .footer .row a {
+       text-decoration: none;
+       color: gray;
+       transition: 0.5s;
+   }
+
+   .footer .row a:hover {
+       color: rgb(14, 204, 214);
+   }
+
+   .footer .row ul {
+       width: 100%;
+   }
+
+   .footer .row ul li {
+       display: inline-block;
+       margin: 0 30px;
+   }
+
+   .footer .row a i {
+       font-size: 2em;
+       margin: 0 1%;
+   }
+
+   @media (max-width: 720px) {
+       .footer {
+           text-align: left;
+           padding: 5%;
+       }
+
+       .footer .row ul li {
+           display: block;
+           margin: 10px 0;
+           text-align: left;
+       }
+
+       .footer .row a i {
+           margin: 0 3%;
+           
+       }
+   }
+
+   .linkedin,
+   .instagram,
+   .twitter,
+   .whatsapp {
+       margin-right: 40%;
+       margin-bottom: -10%;
+   }
+
+   .instagram {
+       margin-right: 30%;
+       margin-bottom: -20%;
+   }
+
+   
+   .instagram:hover{
+
+      box-shadow: #f5f5f5 50px;
+
+   }
+
+   .linkedin:hover{
+
+      transform: scale(1.1);
+   }
+
+   .whatsapp:hover{
+
+transform: scale(1.1);
+}
+
+.twitter:hover{
+
+transform: scale(1.1);
+}
+
+.instagram:hover{
+
+transform: scale(1.1);
+
+}
+
+
+   .owner {
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       text-align: right;
+       margin-right: 2%;
+       margin-top: -13%;
+       font-size: small;
+       padding-bottom: 2%;
+   }
+
+   .copyright {
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-size: small;
+       margin-top: 3%;
+       text-align: center;
+       padding-bottom: -5%;
+       margin-bottom: -2%;
+   }
+</style>
+</head>
+
+<!-- Footer Section -->
+<footer>
+
+
+   
+<div class="footer">
+
+         
+
+         
+
+   <div class="row">
+       <ul>
+           <li class="linkedin"><a href="#"><img src="images/icons8-linkedin-48.png" alt=""></a></li>
+           <li class="instagram"><a href="#"><img src="images/instagramicon-png.png" style="height: 40px; width: 40px;"></a></li>
+           <li class="twitter"><a href="#"><img src="images/icons8-twitter-48.png" alt=""></a></li>
+           <li class="whatsapp"><a href="#"><img src="images/icons8-whatsapp-48.png" alt=""></a></li>
+       </ul>
+   </div>
+
+   <div class="row">
+       <ul>
+           <li><a href="#">FaQ</a></li><!-- iske andhr atleast 3-4 tab -->
+           <li><a href="#">Contact us</a></li>
+           <li><a href="#">Our Services</a></li>
+           <li><a href="#">Privacy Policy</a></li>
+           <li><a href="#">Terms & Conditions</a></li>
+       </ul>
+   </div>
+
+   <div class="row">
+       <div class="owner">
+           <br><br><span style="color:rgb(255, 208, 0)"> Designed </span> <span style="color: aqua;"> by: </span><br><br>
+           <br>Rahul Kumar Sain<br><br>
+           Sourabh soni <br><br>
+          Chitransh Mathur <br><br>
+          Prakash Choudhary<br><div class="copyright"> Copyright © 2024 Inferno - All rights reserved || BCA 1st year</div>
+       </div>
+   </div>
+</div>
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>

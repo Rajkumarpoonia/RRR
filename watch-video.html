@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="icon" type="image/x-icon" href="images/logo jj.png">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>watch</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">Educa.</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">shaikh anas</h3>
+         <p class="role">studen</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">shaikh anas</h3>
+      <p class="role">studen</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>About</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Tutors</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+   </nav>
+
+</div>
+
+<section class="watch-video">
+
+   <div class="video-container">
+      <div class="video">
+         <video src="images/vid-1.mp4" controls poster="images/post-1-1.png" id="video"></video>
+      </div>
+      <h3 class="title">complete HTML tutorial (part 01)</h3>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>29-02-2024</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span>44 likes</span></p>
+      </div>
+      <div class="tutor">
+         <img src="images/pic-2.jpg" alt="">
+         <div>
+            <h3>john deo</h3>
+            <span>developer</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="playlist.html" class="inline-btn">view playlist</a>
+         <button><i class="far fa-heart"></i><span>like</span></button>
+      </form>
+      <p class="description">
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque labore ratione, hic exercitationem mollitia obcaecati culpa dolor placeat provident porro.
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure autem non fugit sint. A, sequi rerum architecto dolor fugiat illo, iure velit nihil laboriosam cupiditate voluptatum facere cumque nemo!
+      </p>
+   </div>
+
+</section>
+
+<section class="comments">
+
+   <h1 class="heading">5 comments</h1>
+
+   <form action="" class="add-comment">
+      <h3>add comments</h3>
+      <textarea name="comment_box" placeholder="enter your comment" required maxlength="1000" cols="30" rows="10"></textarea>
+      <input type="submit" value="add comment" class="inline-btn" name="add_comment">
+   </form>
+
+   <h1 class="heading">user comments</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-1.jpg" alt="">
+            <div>
+               <h3>student name</h3>
+               <span>29-02-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">this is a comment form shaikh anas</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="edit comment" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="delete comment" name="delete_comment" class="inline-delete-btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>john deo</h3>
+               <span>29-02-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">awesome tutorial!
+            keep going!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-3.jpg" alt="">
+            <div>
+               <h3>john deo</h3>
+               <span>29-02-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">amazing way of teaching!
+            thank you so much!
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-4.jpg" alt="">
+            <div>
+               <h3>john deo</h3>
+               <span>29-09-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">loved it, thanks for the tutorial!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-5.jpg" alt="">
+            <div>
+               <h3>john deo</h3>
+               <span>29-02-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">this is what I have been looking for! thank you so much!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>john deo</h3>
+               <span>29-02-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">thanks for the tutorial!
+
+            how to download source code file?
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+   body {
+       margin: 0;
+       overflow-x: hidden;
+   }
+
+   .footer {
+       background: #000;
+       padding: 30px 0;
+       font-family: 'Play', sans-serif;
+       text-align: center;
+       margin-right: -1%;
+   }
+
+   .footer .row {
+       width: 100%;
+       margin: 2% 0;
+       padding: 0.6% 0;
+       color: gray;
+       font-size: 0.8em;
+       margin-left: -1%;
+   }
+
+   .footer .row a {
+       text-decoration: none;
+       color: gray;
+       transition: 0.5s;
+   }
+
+   .footer .row a:hover {
+       color: rgb(14, 204, 214);
+   }
+
+   .footer .row ul {
+       width: 100%;
+   }
+
+   .footer .row ul li {
+       display: inline-block;
+       margin: 0 30px;
+   }
+
+   .footer .row a i {
+       font-size: 2em;
+       margin: 0 1%;
+   }
+
+   @media (max-width: 720px) {
+       .footer {
+           text-align: left;
+           padding: 5%;
+       }
+
+       .footer .row ul li {
+           display: block;
+           margin: 10px 0;
+           text-align: left;
+       }
+
+       .footer .row a i {
+           margin: 0 3%;
+           
+       }
+   }
+
+   .linkedin,
+   .instagram,
+   .twitter,
+   .whatsapp {
+       margin-right: 40%;
+       margin-bottom: -10%;
+   }
+
+   .instagram {
+       margin-right: 30%;
+       margin-bottom: -20%;
+   }
+
+   
+   .instagram:hover{
+
+      box-shadow: #f5f5f5 50px;
+
+   }
+
+   .linkedin:hover{
+
+      transform: scale(1.1);
+   }
+
+   .whatsapp:hover{
+
+transform: scale(1.1);
+}
+
+.twitter:hover{
+
+transform: scale(1.1);
+}
+
+.instagram:hover{
+
+transform: scale(1.1);
+
+}
+
+
+   .owner {
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       text-align: right;
+       margin-right: 2%;
+       margin-top: -13%;
+       font-size: small;
+       padding-bottom: 2%;
+   }
+
+   .copyright {
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-size: small;
+       margin-top: 3%;
+       text-align: center;
+       padding-bottom: -5%;
+       margin-bottom: -2%;
+   }
+</style>
+</head>
+
+<!-- Footer Section -->
+<footer>
+
+
+   
+<div class="footer">
+
+         
+
+         
+
+   <div class="row">
+       <ul>
+           <li class="linkedin"><a href="#"><img src="images/icons8-linkedin-48.png" alt=""></a></li>
+           <li class="instagram"><a href="#"><img src="images/instagramicon-png.png" style="height: 40px; width: 40px;"></a></li>
+           <li class="twitter"><a href="#"><img src="images/icons8-twitter-48.png" alt=""></a></li>
+           <li class="whatsapp"><a href="#"><img src="images/icons8-whatsapp-48.png" alt=""></a></li>
+       </ul>
+   </div>
+
+   <div class="row">
+       <ul>
+           <li><a href="#">FaQ</a></li><!-- iske andhr atleast 3-4 tab -->
+           <li><a href="#">Contact us</a></li>
+           <li><a href="#">Our Services</a></li>
+           <li><a href="#">Privacy Policy</a></li>
+           <li><a href="#">Terms & Conditions</a></li>
+       </ul>
+   </div>
+
+   <div class="row">
+       <div class="owner">
+           <br><br><span style="color:rgb(255, 208, 0)"> Designed </span> <span style="color: aqua;"> by: </span><br><br>
+           <br>Rahul Kumar Sain<br><br>
+           Sourabh soni <br><br>
+          Chitransh Mathur <br><br>
+          Prakash Choudhary<br><div class="copyright"> Copyright © 2024 Inferno - All rights reserved || BCA 1st year</div>
+       </div>
+   </div>
+</div>
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+   
+</body>
+</html>
